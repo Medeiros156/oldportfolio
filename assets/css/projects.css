@@ -1,0 +1,191 @@
+#projects {
+  /* background-image: url("../img/contact-bg.png"); */
+  background-color: var(--dark2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.projects {
+  padding-top: 93px;
+}
+
+.projects h2,
+.projects a {
+  text-align: center;
+}
+
+.projects h2 {
+  padding-bottom: 70px;
+}
+
+/* .botaoVerMais {
+  padding: 10px 100px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: #493737;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
+.botaoVerMais:hover {
+  background-color: #a16c60;
+} */
+
+.botaoVerMais,
+.botaoVerMais::after {
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+    45deg,
+    var(--dark2) 5%,
+    var(--green1) 5%,
+    var(--green1) 95%,
+    var(--dark2) 95%
+  );
+
+  border: 0;
+  color: #fff;
+  /* letter-spacing: 3px; */
+  outline: transparent;
+  position: relative;
+}
+
+.botaoVerMais::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    var(--green2) 3%,
+    var(--green2) 5%,
+    var(--pink1) 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px var(--green2);
+  clip-path: var(--slice-0);
+}
+
+.botaoVerMais:hover::after {
+  animation: 0.3s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+.github-link {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 93px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.proj {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  height: 250px;
+  width: 300px;
+  border-radius: 10%;
+}
+
+.proj:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.proj a {
+}
+.proj a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.proj-p {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #c4c4c4;
+}
+
+.embreve:hover {
+  letter-spacing: 1px;
+}
+
+.embreve {
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/proj1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.embreve div {
+  background-color: var(--green1);
+  transform: rotate(-46deg);
+  padding: 5% 0;
+}
+.embreve p {
+  width: 1000px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.hidden {
+  transition: all 0.7s ease-out;
+  opacity: 0;
+  display: none;
+}
+
+.projects-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projetos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projetos-itens {
+    flex-direction: column;
+  }
+}
+@media (max-width: 950px) {
+  .proj {
+    max-width: 300px;
+  }
+}

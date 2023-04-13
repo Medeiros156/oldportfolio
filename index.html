@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Pedro Medeiros</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/ms-icon-310x310.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/skills.css" />
+  <link rel="stylesheet" href="./assets/css/projects.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/aboutme.css" />
+  <link rel="stylesheet" href="./assets/css/roller.css" />
+  <link rel="stylesheet" href="./assets/css/glitch.css" />
+  <link rel="stylesheet" href="./assets/css/circleMenu.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <canvas style="
+        position: absolute;
+        opacity: 3%;
+        " id="Matrix"></canvas>
+
+
+  <section id="index">
+    <div>
+
+      <div class="bars" id="nav-action">
+        <span class="bar"> </span>
+      </div>
+      <a id="top-button" class=""></a>
+      <nav id="nav">
+
+        <div>
+
+          <div class="nav-links">
+
+            <div style="width: 1550px; height: 1550px;">
+              <svg id="rotatingText" viewBox="0 0 200 200" width="100%" height="100%">
+                <defs>
+                  <path id="circle" d="M 100 100 m -60 0 a 60 60 0 1 0 120 0 a 60 60 0 1 0 -120 0
+                  ">
+                  </path>
+                </defs>
+                <defs>
+                  <path id="circle2" d="M 100 100 m -76 0 a 76 76 0 1 0 152 0 a 76 76 0 1 0 -152 0
+
+                                              ">
+                  </path>
+                </defs>
+                <defs>
+                  <path id="circle3" d="M 100 100 
+                    m -100 0 
+                    a 100 100 0 1 0 200 0 
+                    a 100 100 0 1 0 -200 0
+
+                                              ">
+                  </path>
+                </defs>
+                <text class="glitch-link">
+                  <textPath xlink:href="#circle" id="text-path">
+
+                    <a href="#about-me">
+                      Sobre Mim &nbsp &nbsp &nbsp &nbsp
+                      Sobre Mim &nbsp &nbsp &nbsp &nbsp
+                      Sobre Mim &nbsp &nbsp &nbsp &nbsp
+                      Sobre Mim &nbsp &nbsp &nbsp &nbsp
+                    </a>
+                  </textPath>
+
+                </text>
+                <text class="glitch-link">
+                  <textPath xlink:href="#circle2" id="text-path">
+                    <a href="#projects">
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
+
+                    </a>
+                  </textPath>
+                </text>
+                <text class="glitch-link">
+                  <textPath xlink:href="#circle3" id="text-path">
+                    <a href="#projects">
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
+                    </a>
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+
+
+
+        </div>
+      </nav>
+
+    </div>
+    <div class="index-container">
+      <div class="index-content">
+        <div class="greetings disable-select">
+          <!-- <img src="" class="cmd"alt="" srcset=""> -->
+          <p data-text="Olá, bem vindo!" class="greet">Olá, bem vindo!</p>
+          <p data-text="Eu sou Pedro Medeiros" class="name">Eu sou Pedro Medeiros</p>
+          <p data-text="Desenvolvedor Full Stack" class="desc green  ">Desenvolvedor Front End</p>
+        </div>
+        <!-- <div class="linkedin">
+                <a
+                href="#"
+                target="_blank"
+                class="link"
+                >Linkedin</a
+                >
+              </div> -->
+      </div>
+    </div>
+    <div class="circle-container">
+      <div class="circle-content">
+        <!-- <span id="click-me" style="z-index: 99; cursor: pointer;">.</span> -->
+
+        <!-- <div class="r1 ring"></div> -->
+        <!-- <div class="r2 ring"></div> -->
+        <!-- <div class="r2 ring"></div> -->
+        <div class="r3 ring-nav nav-circle"></div>
+        <div class="r4 ring"></div>
+        <div class="r5 ring-nav nav-circle"></div>
+        <div class="r6 ring"></div>
+        <div class="r7 ring-nav nav-circle"></div>
+        <div class="r8 ring"></div>
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-- primeira tela -->
+
+  <!-- sobre mim -->
+  <section id="about-me">
+    <div class="about-me_wrapper">
+
+      <div class="glitch_image_wrapper">
+
+        <img src="./assets/documents/men22 (1).png" alt="" srcset="" class="glitch-image">
+
+      </div>
+      <div class="about-me-content" data-aos="fade-up" data-aos-once="true">
+        <div class="about-me">
+          <h2>Sobre mim</h2>
+          <p>
+            Lorem ipsum dolor sit, rem ipsum dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturrem ipsum
+            dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturamet
+            consectetur adipisicing elit. Officia quas quam temporibus beatae, ad similique magni repellendus qui quia
+            porro facere, iusto deserunt omnis eveniet quos, sed molestias quod pariatur?
+          </p>
+          <a href="./assets/documents/livro Perspectivas.pdf" download>
+            <button class=" button-cv">Download CV</button>
+          </a>
+
+        </div>
+      </div>
+      <!-- sobre mim -->
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects">
+    <div class="center projects" data-aos="fade-up" data-aos-once="true">
+      <h2 class="project">Projetos</h2>
+      <div class="projects-itens">
+        <div class="proj">
+          <a href="" class="glitch-proj">
+            <img src="./assets/documents/calculator.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+        <div class="proj">
+          <a href="">
+            <img src="./assets/documents/POKEDEX.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+        <div class="proj">
+          <a href="">
+            <img src="./assets/documents/ReactSocial.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+        <div class="proj">
+          <a href="">
+            <img src="./assets/documents/WeatherApp.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+        <div class="proj">
+          <a href="">
+            <img src="./assets/documents/MarketList.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+        <div class="proj">
+          <a href="">
+            <img src="./assets/img/proj1.png" alt="" srcset="">
+          </a>
+          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+        </div>
+
+        <div class="proj">
+          <div class="embreve">
+            <div>
+              <p>Calculadora React e Sass.</br> EM BREVE</p>
+            </div>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="embreve">
+            <div>
+              <p>Calculadora React e Sass.</br> EM BREVE</p>
+            </div>
+          </div>
+        </div>
+        <div class="proj hidden">
+          <div class="embreve">
+            <div>
+              <p>Calculadora React e Sass.</br> EM BREVE</p>
+            </div>
+          </div>
+        </div>
+        <div class="proj hidden">
+          <div class="embreve">
+            <div>
+              <p>Calculadora React e Sass.</br> EM BREVE</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="proj hidden">
+              <div class="embreve">
+                <div>
+                  <p>Calculadora React e Sass.</br> EM BREVE</p>
+                </div>
+              </div>
+            </div>
+            <div class="proj hidden">
+              <div class="embreve">
+                <div>
+                  <p>Calculadora React e Sass.</br> EM BREVE</p>
+                </div>
+              </div>
+            </div>
+            <div class="proj hidden">
+              <div class="embreve">
+                <div>
+                  <p>Calculadora React e Sass.</br> EM BREVE</p>
+                </div>
+              </div>
+            </div> -->
+
+
+      </div>
+
+      <div class="github-link">
+        <button class="botaoVerMais">Ver mais</button>
+        <a href="#" target="_blank">Repositórios no github</a>
+      </div>
+    </div>
+  </section>
+  <!-- Projetos -->
+
+  <!-- Habilidades -->
+  <section id="skillset">
+
+    <div class="center">
+      <div class="skillset-pd" data-aos="fade-up" data-aos-once="true">
+        <h2 class="project">Habilidades</h2>
+        <div class="skills-descricao">
+          <div class="container-skills">
+            <div class="skill-box glitch-skill html-skill"></div>
+            <div class="skill-box glitch-skill css-skill"></div>
+            <div class="skill-box glitch-skill js-skill"></div>
+            <div class="skill-box glitch-skill react-skill"> </div>
+            <div class="skill-box glitch-skill sass-skill"></div>
+            <div class="skill-box glitch-skill git-skill"></div>
+            <div class="skill-box glitch-skill github-skill"> </div>
+            <div class="skill-box glitch-skill ts-skill"></div>
+            <div class="skill-box glitch-skill node-skill"></div>
+            <div class="skill-box glitch-skill bootstrap-skill"> </div>
+            <div class="skill-box glitch-skill jquery-skill"> </div>
+            <div class="skill-box glitch-skill mui-skill"> </div>
+          </div>
+          <div class="container-descricao">
+            <div class="texto-descricao">
+
+            </div>
+            <div class="skill-progress">
+            </div>
+            <div class="roller-wrapper">
+              <div class="roller">
+                <div id="rolltext">
+                  <div class="hero glitch-title layers" style="color: #E44D26">HTML</div>
+                  <div class="hero glitch-title layers" style="color: #264DE4">CSS</div>
+                  <div class="hero glitch-title layers" style="color: #E9CA32">Javascript</div>
+                  <div class="hero glitch-title layers" style="color: #90C53F">Nodejs</div>
+                  <div class="hero glitch-title layers" style="color: #4AD0E9">React</div>
+                  <div class="hero glitch-title layers" style="color: #DE4C36">GitHub</div>
+                  <div class="hero glitch-title layers" style="color: #CC6699">SASS</div>
+                  <div class="hero glitch-title layers" style="color: #105C9F">Typescript</div>
+                  <div class="hero glitch-title layers" style="color: #673AB7">Bootstrap</div>
+                  <div class="hero glitch-title layers" style="color: #0000FF">MUI</div>
+                  <div class="hero glitch-title layers" style="color: #000000">Jquery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="" class="alura-link">Certificados Alura</a>
+      </div>
+    </div>
+  </section>
+  <!-- Habilidades -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-conteiner">
+      <div class="contato-creditos">
+        E-mail para contato: @gmail.com <br />
+
+      </div>
+      <div class="icons">
+        <div class="links links1">
+          <a href="#" target="_blank">
+            <img src="assets/img/github2.svg" alt="github-icon" />
+          </a>
+        </div>
+        <div class="links links2">
+          <a href="#" target="_blank">
+            <img src="assets/img/linkedinff2.svg" alt="github-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <script>
+    // Setting up the Variables
+    var bars = document.getElementById("nav-action");
+    var nav = document.getElementById("nav");
+    var navCircle = document.querySelectorAll(".nav-circle")
+
+
+    //setting up the listener
+    bars.addEventListener("click", barClicked, false);
+
+
+    //setting up the clicked Effect
+    function barClicked() {
+      bars.classList.toggle('active');
+      console.log(navCircle)
+      nav.classList.toggle('visible');
+      navCircle.forEach(function (node) {
+        node.classList.toggle('visible');
+      });
+
+    }
+  </script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/maquina_escrever.js"></script>
+  <script src="assets/js/habilidades.js"></script>
+  <script src="assets/js/matrixBackground.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+  </script>
+</body>
+
+</html>

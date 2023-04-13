@@ -1,0 +1,227 @@
+.menu_wraper {
+  /* position: absolute; */
+  /* top: 30px; */
+  /* right: 30px; */
+  /* overflow: hidden; */
+}
+
+.bars {
+  /*   background-color:pink; */
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 101;
+  padding-top: 9px;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.bars span::before,
+.bars span::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+}
+
+.bar::before {
+  transform: translateY(-9px);
+}
+
+.bar::after {
+  transform: translateY(9px);
+}
+
+.bars.active .bar {
+  background-color: transparent;
+}
+
+.bars.active span::before {
+  animation: top-bar 1s;
+  animation-fill-mode: forwards;
+}
+
+.bars.active span::after {
+  animation: bottom-bar 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Navbar Links CSS */
+
+#nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.nav-circle {
+  transition: all 1s;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* #nav a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 70vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-indent: 50vw;
+  border-radius: 50%;
+  transition: all 0.5s;
+} */
+
+/* ul {
+  list-style: none;
+} */
+
+.visible {
+  z-index: 100 !important;
+  opacity: 1 !important;
+}
+
+.nav-links div {
+  animation: rotate 580s infinite;
+}
+
+.nav-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(901px, -780px);
+  user-select: none;
+}
+
+textPath a {
+  font-size: 0.45rem;
+  /* letter-spacing: 7px; */
+  fill: rgba(255, 255, 255, 0.53);
+  opacity: 50%;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+
+.circle-container {
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  overflow: hidden;
+  width: 50vw;
+}
+.circle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(657px, -51px);
+  /* opacity: 90%; */
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  animation: rotate 80s linear infinite;
+  --angle: 0deg;
+  /* transform: translateX(50px) ; */
+  background: linear-gradient(100deg, #b50808cc, transparent 40%, #1220e2e0);
+}
+.ring-nav {
+  position: absolute;
+  border-radius: 50%;
+  animation: rotate 80s linear infinite;
+  --angle: 0deg;
+  background: linear-gradient(100deg, #b50808cc, transparent 40%, #1220e2e0);
+}
+.ring-nav:before,
+.ring-nav:after {
+  content: " ";
+  position: absolute;
+  inset: 2.1px;
+  background: black;
+  /* background: linear-gradient(#b50808cc, #1220e2e0); */
+  border-radius: inherit;
+}
+.ring-nav:before {
+  background: linear-gradient(45deg, transparent 1%, green, pink, red, blue);
+  filter: blur(30px);
+}
+.ring:before,
+.ring:after {
+  content: " ";
+  position: absolute;
+  inset: 2.1px;
+  background: black;
+  /* background: linear-gradient(#b50808cc, #1220e2e0); */
+  border-radius: inherit;
+}
+
+.ring:before {
+  background: linear-gradient(45deg, transparent 1%, green, pink, red, blue);
+  filter: blur(30px);
+}
+
+.r1 {
+  width: 130rem;
+  height: 130rem;
+}
+.r2 {
+  width: 120rem;
+  height: 120rem;
+}
+.r3 {
+  width: 110rem;
+  height: 110rem;
+}
+.r4 {
+  width: 100rem;
+  height: 100rem;
+}
+.r5 {
+  width: 90rem;
+  height: 90rem;
+}
+.r6 {
+  width: 80rem;
+  height: 80rem;
+}
+.r7 {
+  width: 70rem;
+  height: 70rem;
+  font-size: 5rem;
+}
+.r8 {
+  width: 60rem;
+  height: 60rem;
+}
+.r9 {
+  width: 50rem;
+  height: 50rem;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(3600deg);
+    /* filter: hue-rotate(3600deg); */
+  }
+}

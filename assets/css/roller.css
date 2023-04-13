@@ -1,0 +1,98 @@
+.roller-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.roller {
+  font-size: 3.5rem;
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roller #rolltext {
+  position: absolute;
+  /* top: 20px; */
+  animation: slide 30s infinite;
+}
+
+.roller #rolltext div {
+  border-radius: 10%;
+  padding-bottom: 3rem;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -7.1rem;
+  }
+  20% {
+    top: -14.2rem;
+  }
+  30% {
+    top: -21.3rem;
+  }
+  40% {
+    top: -28.4rem;
+  }
+  50% {
+    top: -35.5rem;
+  }
+  60% {
+    top: -42.6rem;
+  }
+  70% {
+    top: -49.7rem;
+  }
+  80% {
+    top: -56.8rem;
+  }
+  90% {
+    top: -63.9rem;
+  }
+  100% {
+    top: -71rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+  }
+
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -2.125rem;
+    }
+    50% {
+      top: -4.25rem;
+    }
+    72.5% {
+      top: -6.375rem;
+    }
+  }
+}
