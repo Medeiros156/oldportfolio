@@ -59,14 +59,7 @@
 /* Navbar Links CSS */
 
 #nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all 1s;
   z-index: -1;
-  overflow: hidden;
   opacity: 0;
 }
 
@@ -76,43 +69,26 @@
   opacity: 0;
 }
 
-/* #nav a {
-  color: #fff;
-  text-decoration: none;
-  line-height: 70vw;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-indent: 50vw;
-  border-radius: 50%;
-  transition: all 0.5s;
-} */
 
-/* ul {
-  list-style: none;
-} */
 
 .visible {
   z-index: 100 !important;
   opacity: 1 !important;
 }
 
-.nav-links div {
-  animation: rotate 580s infinite;
+.nav-links {
+  animation: rotate 180s infinite;
 }
+
+
 
 .nav-links {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(901px, -780px);
-  user-select: none;
+  /* transform: translate(1282px, -1048px); */
 }
 
 textPath a {
-  font-size: 0.45rem;
+  font-size: 5rem;
   /* letter-spacing: 7px; */
   fill: rgba(255, 255, 255, 0.53);
   opacity: 50%;
