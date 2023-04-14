@@ -6,10 +6,7 @@
 }
 
 .bars {
-  /*   background-color:pink; */
   position: absolute;
-  width: 27px;
-  height: 27px;
   top: 30px;
   right: 30px;
   cursor: pointer;
@@ -17,7 +14,7 @@
   padding-top: 9px;
 }
 
-.bar {
+/* .bar {
   width: 100%;
   height: 4px;
   background-color: #fff;
@@ -54,6 +51,54 @@
 .bars.active span::after {
   animation: bottom-bar 1s;
   animation-fill-mode: forwards;
+} */
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+}
+
+.bar span {
+  background: var(--green1);
+  /* opacity: 50%; */
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.bar span:nth-of-type(1) {
+  width: 50%;
+}
+
+.bar span:nth-of-type(2) {
+  width: 100%;
+}
+
+.bar span:nth-of-type(3) {
+  width: 75%;
+}
+
+.bars.active {
+  /* display: none; */
+}
+
+.bars.active .bar span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+
+.bars.active .bar span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+.bars.active .bar span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(30px, -11px) rotatez(45deg);
 }
 
 /* Navbar Links CSS */
@@ -69,18 +114,14 @@
   opacity: 0;
 }
 
-
-
 .visible {
   z-index: 100 !important;
   opacity: 1 !important;
 }
 
 .nav-links {
-  animation: rotate 180s infinite;
+  animation: rotate 480s infinite;
 }
-
-
 
 .nav-links {
   position: absolute;
@@ -88,10 +129,10 @@
 }
 
 textPath a {
-  font-size: 5rem;
+  font-size: 3rem;
   /* letter-spacing: 7px; */
   fill: rgba(255, 255, 255, 0.53);
-  opacity: 50%;
+  /* opacity: 50%; */
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -111,7 +152,9 @@ textPath a {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
   transform: translate(657px, -51px);
+  /* transform: translate(57px, 851px); */
   /* opacity: 90%; */
 }
 
