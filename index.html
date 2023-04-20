@@ -20,24 +20,26 @@
   <link rel="stylesheet" href="./assets/css/roller.css" />
   <link rel="stylesheet" href="./assets/css/glitch.css" />
   <link rel="stylesheet" href="./assets/css/circleMenu.css" />
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <canvas style="
-        position: absolute;
-        opacity: 5%;
 
-        " id="Matrix"></canvas>
+
+  <canvas style="
+  position: absolute;
+  opacity: 5%;
+  width: 100%;
+  
+  " id="Matrix"></canvas>
 
 
   <section id="index">
 
 
     <div class="bars" id="nav-action">
-      <!-- <span class="bar"> </span> -->
+
       <div class="bar">
 
         <span></span>
@@ -46,75 +48,21 @@
       </div>
     </div>
     <a id="top-button" class=""></a>
-    <nav id="">
-
-      <!-- <text class="glitch-link">
-            <textPath xlink:href="#circle2" id="text-path">
-              <a href="#projects">
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Projetos
-
-              </a>
-            </textPath>
-          </text>
-          <text class="glitch-link">
-            <textPath xlink:href="#circle3" id="text-path">
-              <a href="#projects">
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Habilidades
-              </a>
-            </textPath>
-          </text> -->
-      <!-- </div> -->
-
-
-
-
-    </nav>
-
     </div>
     <div class="index-container">
       <div class="index-content">
         <div class="greetings disable-select">
-          <!-- <img src="" class="cmd"alt="" srcset=""> -->
+
           <p data-text="Olá, bem vindo!" class="greet">Olá, bem vindo!</p>
           <p data-text="Eu sou Pedro Medeiros" class="name">Eu sou Pedro Medeiros</p>
-          <p data-text="Desenvolvedor Full Stack" class="desc green  ">Desenvolvedor Front End</p>
+          <p data-text="Desenvolvedor Full Stack" class="desc hero green  ">Desenvolvedor Front End</p>
         </div>
-        <!-- <div class="linkedin">
-                <a
-                href="#"
-                target="_blank"
-                class="link"
-                >Linkedin</a
-                >
-              </div> -->
+
       </div>
     </div>
     <div class="circle-container">
       <div class="circle-content">
-        <!-- <span id="click-me" style="z-index: 99; cursor: pointer;">.</span> -->
 
-        <!-- <div class="r1 ring"></div> -->
-        <!-- <div class="r2 ring"></div> -->
-        <!-- <div class="r2 ring"></div> -->
         <div class="r3 ring-nav nav-circle"></div>
         <div class="r4 ring"></div>
         <div class="r5 ring-nav nav-circle"></div>
@@ -199,10 +147,23 @@
         <div class="about-me">
           <h2>Sobre mim</h2>
           <p>
-            Lorem ipsum dolor sit, rem ipsum dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturrem ipsum
-            dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturrem ipsum dolor sit, amet consecteturamet
-            consectetur adipisicing elit. Officia quas quam temporibus beatae, ad similique magni repellendus qui quia
-            porro facere, iusto deserunt omnis eveniet quos, sed molestias quod pariatur?
+            Olá, meu nome é Pedro Medeiros e sou um programador front end. Estou atualmente em busca do meu primeiro
+            emprego na área de tecnologia.
+
+            Desde que comecei a me interessar por programação, tenho me dedicado ao estudo e aprimoramento constante das
+            minhas habilidades em front end e back end. Tenho experiência em desenvolvimento de aplicações usando React,
+            HTML, CSS, JavaScript e NodeJS.
+
+            Além disso, estou sempre estudando novas frameworks e conceitos em JavaScript para me tornar um
+            desenvolvedor full stack. Acredito que a aprendizagem contínua é essencial para acompanhar as mudanças
+            constantes no mundo da tecnologia.
+
+            Estou animado com as possibilidades de crescimento em minha carreira de desenvolvedor e estou em busca de
+            uma empresa que me permita aplicar meus conhecimentos e desenvolver novas habilidades. Sou um profissional
+            dedicado, comprometido e que trabalha bem em equipe.
+
+            Agradeço desde já pela oportunidade de apresentar um pouco sobre mim e estou disponível para esclarecer
+            qualquer dúvida ou para participar de processos seletivos.
           </p>
           <a href="./assets/documents/livro Perspectivas.pdf" download>
             <button class=" button-cv">Download CV</button>
@@ -219,53 +180,60 @@
       <h2 class="project">Projetos</h2>
       <div class="projects-itens">
         <div class="proj">
-          <a href="" class="glitch-proj">
+          <a href="https://medeiros156.github.io/Calculator/" class="glitch-proj">
             <img src="./assets/img/CALCULADOREACT.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto Calculadora Javascript React e Material UI.</p>
         </div>
         <div class="proj">
-          <a href="">
+          <a href="https://medeiros156.github.io/Pokedex/">
             <img src="./assets/img/POKEDEX.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto Pokedex React</p>
         </div>
         <div class="proj">
-          <a href="">
+          <a href="https://medeiros156.github.io/Reactsocial/#/login">
             <img src="./assets/img/SOCIALREACTAPP.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto Rede social React</p>
         </div>
         <div class="proj">
-          <a href="">
+          <a href="https://medeiros156.github.io/Weather/">
             <img src="./assets/img/WEATHERAPP.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto Aplicativo de Clima HTML/CSS/jQuery</p>
         </div>
         <div class="proj">
-          <a href="">
+          <a href="https://medeiros156.github.io/MarketList/">
             <img src="./assets/img/MARKETLIST.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto Full Stack Market-List HTML/CSS/jQuery</p>
         </div>
         <div class="proj">
-          <a href="">
+          <a href="https://medeiros156.github.io/Dashboard/">
             <img src="./assets/img/DASHBOARDREACT.png" alt="" srcset="">
           </a>
-          <p class="proj-p">Projeto Calculadora Javascript React e Sass.</p>
+          <p class="proj-p">Projeto React Dashboard</p>
         </div>
 
         <div class="proj">
           <div class="embreve">
             <div>
-              <p>Calculadora React e Sass.</br> EM BREVE</p>
+              <p>Projeto Rent Car React</br> EM BREVE</p>
             </div>
           </div>
         </div>
         <div class="proj">
           <div class="embreve">
             <div>
-              <p>Calculadora React e Sass.</br> EM BREVE</p>
+              <p>Projeto Full Stack Twitter Clone</br> EM BREVE</p>
+            </div>
+          </div>
+        </div>
+        <div class="proj hidden">
+          <div class="embreve">
+            <div>
+              <p>Project NextJs</br> EM BREVE</p>
             </div>
           </div>
         </div>
@@ -276,34 +244,7 @@
             </div>
           </div>
         </div>
-        <div class="proj hidden">
-          <div class="embreve">
-            <div>
-              <p>Calculadora React e Sass.</br> EM BREVE</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="proj hidden">
-              <div class="embreve">
-                <div>
-                  <p>Calculadora React e Sass.</br> EM BREVE</p>
-                </div>
-              </div>
-            </div>
-            <div class="proj hidden">
-              <div class="embreve">
-                <div>
-                  <p>Calculadora React e Sass.</br> EM BREVE</p>
-                </div>
-              </div>
-            </div>
-            <div class="proj hidden">
-              <div class="embreve">
-                <div>
-                  <p>Calculadora React e Sass.</br> EM BREVE</p>
-                </div>
-              </div>
-            </div> -->
+
 
 
       </div>
@@ -362,7 +303,10 @@
             </div>
           </div>
         </div>
-        <a href="" class="alura-link">Certificados Alura</a>
+        <div class="alura-link-wrapper">
+
+          <a href="https://medeiros156.github.io/MeusCursosAlura/" class="alura-link">Certificados Alura</a>
+        </div>
       </div>
     </div>
   </section>
@@ -370,7 +314,7 @@
 
   <!-- footer -->
   <footer class="footer">
-    <div class="footer-conteiner">
+    <div class="footer-container">
       <div class="contato-creditos">
         E-mail para contato: @gmail.com <br />
 
@@ -392,17 +336,14 @@
   <!-- footer -->
 
   <script>
-    // Setting up the Variables
     var bars = document.getElementById("nav-action");
     var nav = document.getElementById("nav");
     var navCircle = document.querySelectorAll(".nav-circle")
 
 
-    //setting up the listener
     bars.addEventListener("click", barClicked, false);
 
 
-    //setting up the clicked Effect
     function barClicked() {
       bars.classList.toggle('active');
       console.log(navCircle)

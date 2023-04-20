@@ -1,5 +1,5 @@
 #skillset {
-  min-height: 90vh;
+  height: 85vh;
   background-color: var(--dark2);
   /* background-image: url("../img/contact-bg.png"); */
 }
@@ -12,10 +12,7 @@
   text-align: center;
   padding-bottom: 70px;
 }
-.skillset-pd a {
-  text-align: center;
-  padding-top: 70px;
-}
+
 
 .skills-descricao {
   display: flex;
@@ -24,6 +21,8 @@
   gap: 50px;
   padding-bottom: 70px;
 }
+
+
 
 .skill-progress {
   background-color: #eee;
@@ -100,6 +99,12 @@
   transform: scale(1.1);
 }
 
+.alura-link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .glitch-skill::after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 10% 0);
@@ -141,9 +146,7 @@
 }
 
 @media (max-width: 1200px) {
-  .container-descricao {
-    /* height: 260px; */
-  }
+ 
 
   #skillset {
     display: flex;

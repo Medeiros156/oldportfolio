@@ -2,8 +2,11 @@
   width: 100%;
   background-color: var(--dark1);
 }
-
-.footer-conteiner {
+footer {
+  position: relative;
+  z-index: 3;
+}
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -27,7 +30,7 @@
     text-align: center;
   }
 
-  .footer-conteiner {
+  .footer-container {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;

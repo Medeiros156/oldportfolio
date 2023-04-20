@@ -1,9 +1,6 @@
 const canvas = document.getElementById("Matrix");
 const context = canvas.getContext("2d");
 
-canvas.width = window.innerWidth - 20;
-canvas.height = window.innerHeight * 4.1;
-
 const nums = "0123456789";
 const latin = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const asia =
@@ -12,13 +9,27 @@ const asia =
 const letters = asia + latin + nums;
 
 const fontSize = 14;
-const columns = canvas.width / fontSize;
 
-const rainDrops = [];
+let columns = 0;
+let rainDrops = [];
 
-for (let x = 0; x < columns; x++) {
-  rainDrops[x] = 1;
-}
+const resizeCanvas = () => {
+  columns = canvas.width / fontSize;
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Mobile devices
+
+    canvas.width = window.innerWidth - 10;
+    canvas.height = document.body.clientHeight - 250;
+  } else {
+    canvas.width = window.innerWidth - 10;
+    canvas.height = document.body.clientHeight - 50;
+    // Desktop devices
+  }
+  rainDrops = [];
+  for (let x = 0; x < columns; x++) {
+    rainDrops[x] = 1;
+  }
+};
 
 const draw = () => {
   context.fillStyle = "rgba(0, 0, 0, 0.05)";
@@ -26,8 +37,7 @@ const draw = () => {
 
   context.fillStyle = "#0F0";
   context.font = fontSize + "px monospace";
-  //   const font = `${fontSize}px 'Noto Emoji'`;
-  //   context.font = font;
+
   for (let i = 0; i < rainDrops.length; i++) {
     const text = letters.charAt(Math.floor(Math.random() * letters.length));
     context.fillText(text, i * fontSize, rainDrops[i] * fontSize);
@@ -38,5 +48,9 @@ const draw = () => {
     rainDrops[i]++;
   }
 };
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
 
 setInterval(draw, 50);

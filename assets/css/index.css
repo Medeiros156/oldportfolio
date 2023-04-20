@@ -128,6 +128,11 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+a {
+  text-decoration: none;
+  color: #00552b;
+}
+
 /* --------------INDEX-------------- */
 #index {
   background-color: var(--dark2);

@@ -17,7 +17,7 @@
 
 h2 {
   font-size: 45px;
-  color: white;
+  color: #fafafa;
 }
 
 .about-me {
@@ -103,11 +103,8 @@ h2 {
     flex-basis: 100%;
   }
 
-  h2 {
-  }
-
-  .about-me-content p {
-  }
+  
+  
   .about-me p {
     text-indent: 0;
   }
@@ -127,6 +124,4 @@ h2 {
 }
 
 @media (max-width: 950px) {
-  .about-me-content {
-  }
 }
