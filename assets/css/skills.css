@@ -1,5 +1,6 @@
 #skillset {
-  height: 85vh;
+  padding-bottom: 40px;
+  /* height: 85vh; */
   background-color: var(--dark2);
   /* background-image: url("../img/contact-bg.png"); */
 }
@@ -13,16 +14,13 @@
   padding-bottom: 70px;
 }
 
-
 .skills-descricao {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  /* justify-content: start; */
   gap: 50px;
   padding-bottom: 70px;
 }
-
-
 
 .skill-progress {
   background-color: #eee;
@@ -146,8 +144,6 @@
 }
 
 @media (max-width: 1200px) {
- 
-
   #skillset {
     display: flex;
     justify-content: center;

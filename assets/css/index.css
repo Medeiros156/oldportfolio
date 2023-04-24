@@ -85,10 +85,6 @@
 
   background: linear-gradient(90deg, var(--pink1), transparent);
 
-  /* background: linear-gradient(#241943, #5d538d, #9f86c1, #be97c4), #e0b2cc; */
-  /* opacity: 40%; */
-  /* background: linear-gradient(#b50808cc, #1220e2e0); */
-  /* text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px var(--green2); */
   clip-path: var(--slice-0);
 }
 
@@ -147,15 +143,14 @@ a {
 }
 
 .index-container {
-  width: 100%;
+  width: 80%;
   height: 165px;
 }
 
 .index-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 15rem;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .greet,
@@ -197,228 +192,22 @@ a {
 /* ----------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------- */
 
-.img-cont {
-  /* widht: 270px; */
-}
-
-.img {
-  max-width: 400px;
-}
-
-.link {
-  font-size: 25px;
-  width: 50%;
-  text-align: center;
-  padding: 12px 0;
-  transition: ease-in-out 0.3s;
-}
-
-.link:hover {
-  letter-spacing: 5px;
-  color: white;
-}
-
-.close-menu {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  #index {
-    /* height: auto; */
-    /* flex-direction: column; */
+@media (min-width: 768px) and (max-width: 1080px) {
+  .index-container {
+    margin-top: 10rem;
   }
-
-  .r1 {
-    width: 20rem;
-    height: 20rem;
-  }
-  .r2 {
-    width: 15rem;
-    height: 15rem;
-  }
-  .r3 {
-    width: 10rem;
-    height: 10rem;
-  }
-  .r4 {
-    width: 8rem;
-    height: 8rem;
-  }
-  .r5 {
-    width: 5rem;
-    height: 1.5rem;
-  }
-  .r6 {
-    width: 1rem;
-    height: 1rem;
-  }
-  .index-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 0px;
-    padding-bottom: 200px;
-  }
-
-  .img {
-    padding: 100px 0;
-  }
-
   .greetings {
-    padding: 0 1.3rem;
-    /* display: flex; */
     font-size: 2rem;
-    text-align: center;
-    /* flex-wrap: wrap;
-    justify-content: center;
-    text-align: center; */
-  }
-  .circle-container {
-    bottom: 0px;
-    height: 40vh;
-    overflow: hidden;
-    width: 100vw;
-  }
-  .circle-content {
-    transform: translatey(180px);
   }
 }
 
-@media (max-width: 950px) {
-  .img {
-    padding: 25px 0;
-  }
-
-  .index-content {
-    display: flex;
-    justify-content: center;
-  }
-
-  #index {
-    display: flex;
-    justify-content: center;
-  }
-
-  .cmd {
-    transform: translate(0px, 13px);
-    width: 270px;
-    height: 160px;
-    font-weight: bold;
-    background-image: url("../img/cmd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0px 0px;
-    box-shadow: 0px 0px 30px black;
-  }
-  .cmd p {
-    max-width: 250px;
-    font-size: 1rem;
-  }
-  .img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .descricao {
-    font-size: 20px;
-  }
-
-  .meu-nome {
-    font-size: 30px;
-  }
-
-  .left,
-  .right {
-    margin: 0;
-  }
-
-  .logo {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  .navbar {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu-center {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .center {
-    margin: 0;
-  }
-  .navbar-container {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  .navbar-container .logo {
-    width: 100%;
-  }
-
-  .right ul {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .right ul a {
-    font-size: 35px;
-  }
-
-  /* configurando menu mobile */
-  .navbar {
-    display: block;
-    position: fixed;
-    top: -100vh;
-    transition: ease 0.3s;
-  }
-
-  .close-menu-label::after {
-    content: "≡";
-    position: fixed;
-    z-index: 2;
-    top: 2rem;
-    right: 2rem;
-    background: #792e33;
-    color: white;
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 3rem;
-    height: 3rem;
+@media (max-width: 767px) {
+  .index-container {
+    margin-top: 14rem;
     text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
   }
-  /* ✕ */
-  .close-menu:checked ~ .navbar {
-    top: 0;
-  }
-
-  .close-menu:checked ~ .close-menu-label::after {
-    display: block;
-    content: "✕";
-    z-index: 9999;
-  }
-
-  .navbar .navbar-container ul li a {
-    font-size: 25px;
-  }
-
-  .navbar {
-    background: rgba(0, 0, 0, 0.527);
+  .greetings {
+    font-size: 1.6rem;
+    letter-spacing: -2px;
   }
 }

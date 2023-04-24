@@ -1,6 +1,6 @@
 #about-me {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--dark2);
 }
 
@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 h2 {
@@ -30,14 +32,13 @@ h2 {
 
 .about-me p {
   text-indent: 30px;
-  font-size: 20px;
   max-width: 80%;
   color: white;
 }
 
 .glitch-image {
   opacity: 50%;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .button-cv,
@@ -96,32 +97,19 @@ h2 {
   max-width: 50%;
 }
 
-@media (max-width: 1200px) {
-  .about-me-content {
-    justify-content: center;
-    text-align: center;
-    flex-basis: 100%;
-  }
-
-  
-  
-  .about-me p {
-    text-indent: 0;
-  }
-  .about-me_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-top: 5rem;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--dark3);
-    background-image: url("../img/PMedeiros_programmer_behind_desk_drinking_coffe_fbcf939d-e5fb-4502-a626-6b31101553f2.png");
-    background-repeat: no-repeat;
-    background-position: -55px 430px;
-    background-size: 120%;
+@media (min-width: 768px) and (max-width: 1080px) {
+  .glitch-image {
+    transform: translate(-350px, 0);
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 767px) {
+  .about-me-content {
+    flex-basis: 80%;
+  }
+  .glitch_image_wrapper {
+    /* display: none; */
+    position: absolute;
+    opacity: 20%;
+  }
 }

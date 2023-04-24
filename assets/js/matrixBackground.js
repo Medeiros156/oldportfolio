@@ -14,17 +14,17 @@ let columns = 0;
 let rainDrops = [];
 
 const resizeCanvas = () => {
-  columns = canvas.width / fontSize;
-  if (window.matchMedia("(max-width: 768px)").matches) {
-    // Mobile devices
-
+  if (window.innerWidth < 768) {
+    // Mobile
     canvas.width = window.innerWidth - 10;
     canvas.height = document.body.clientHeight - 250;
   } else {
     canvas.width = window.innerWidth - 10;
     canvas.height = document.body.clientHeight - 50;
-    // Desktop devices
+    // Desktop
   }
+  columns = canvas.width / fontSize;
+  console.log(columns);
   rainDrops = [];
   for (let x = 0; x < columns; x++) {
     rainDrops[x] = 1;
@@ -34,6 +34,8 @@ const resizeCanvas = () => {
 const draw = () => {
   context.fillStyle = "rgba(0, 0, 0, 0.05)";
   context.fillRect(0, 0, canvas.width, canvas.height);
+  // console.log(canvas.height);
+  // console.log(canvas.width);
 
   context.fillStyle = "#0F0";
   context.font = fontSize + "px monospace";
