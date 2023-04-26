@@ -156,7 +156,6 @@ a {
 .greet,
 .name,
 .desc {
-  white-space: pre;
   line-height: 55px;
 }
 

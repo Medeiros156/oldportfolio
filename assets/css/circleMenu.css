@@ -121,42 +121,24 @@ textPath a {
   position: absolute;
   border-radius: 50%;
   animation: rotate 80s linear infinite;
-  --angle: 0deg;
   /* transform: translateX(50px) ; */
-  background: linear-gradient(100deg, #b50808cc, transparent 40%, #1220e2e0);
-}
-.ring-nav {
-  position: absolute;
-  border-radius: 50%;
-  animation: rotate 80s linear infinite;
-  --angle: 0deg;
-  background: linear-gradient(100deg, #b50808cc, transparent 40%, #1220e2e0);
-}
-.ring-nav:before,
-.ring-nav:after {
-  content: " ";
-  position: absolute;
-  inset: 2.1px;
-  background: black;
-  /* background: linear-gradient(#b50808cc, #1220e2e0); */
-  border-radius: inherit;
-}
-.ring-nav:before {
-  background: linear-gradient(45deg, transparent 1%, green, pink, red, blue);
-  filter: blur(30px);
+  background: linear-gradient(var(--pink1), var(--green1));
+  /* background: linear-gradient(100deg, #b50808cc, transparent 40%, #1220e2e0); */
+  filter: brightness(1.3);
 }
 .ring:before,
 .ring:after {
   content: " ";
   position: absolute;
-  inset: 2.1px;
+  inset: 3.1px;
   background: black;
   /* background: linear-gradient(#b50808cc, #1220e2e0); */
   border-radius: inherit;
 }
 
 .ring:before {
-  background: linear-gradient(45deg, transparent 1%, green, pink, red, blue);
+  background: linear-gradient(var(--pink1), var(--green1));
+  /* background: linear-gradient(45deg, transparent 1%, green, pink, red, blue); */
   filter: blur(30px);
 }
 

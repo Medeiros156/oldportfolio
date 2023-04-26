@@ -39,6 +39,8 @@ h2 {
 .glitch-image {
   opacity: 50%;
   /* max-width: 100%; */
+  max-height: 110%;
+  overflow: hidden;
 }
 
 .button-cv,
@@ -95,6 +97,7 @@ h2 {
 .glitch_image_wrapper {
   height: 100vh;
   max-width: 50%;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1080px) {
