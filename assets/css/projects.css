@@ -146,9 +146,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/proj1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .embreve div {
   background-color: var(--green1);

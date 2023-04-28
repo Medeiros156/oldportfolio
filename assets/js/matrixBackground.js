@@ -38,22 +38,15 @@ const resizeCanvas = () => {
   if (window.innerWidth < 768) {
     canvas.width = window.innerWidth - 10;
     canvas.height = document.body.scrollHeight;
-    console.log("docdoc1", document.body.scrollHeight);
-    console.log("canvas1", canvas.height);
   } else if (window.innerWidth < 1080) {
     canvas.width = window.innerWidth - 10;
     canvas.height = document.body.scrollHeight - 20;
-    console.log("docdoc2", document.body.scrollHeight);
-    console.log("canvas2", canvas.height);
   } else {
     canvas.width = window.innerWidth - 10;
     canvas.height = document.body.scrollHeight - 50;
-    console.log("docdoc3", document.body.scrollHeight);
-    console.log("canvas3", canvas.height);
   }
 
   columns = canvas.width / fontSize;
-  console.log(columns);
   rainDrops = [];
   for (let x = 0; x < columns; x++) {
     rainDrops[x] = 1;

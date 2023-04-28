@@ -50,11 +50,3 @@ footer {
 .links:hover {
   transform: rotate(-360deg);
 }
-
-.links1 {
-  background-image: url(../img/githubff2.svg);
-}
-
-.links2 {
-  background-image: url(../img/linkedinff2.svg);
-}
